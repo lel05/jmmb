@@ -44,7 +44,7 @@ namespace jmmb
 
             Device.BeginInvokeOnMainThread(async () =>
             {
-                await DisplayAlert("k", "k", "k");
+                await DisplayAlert("Alarm", "Pobudkaaa!!!", "OK");
             });
 
         }
