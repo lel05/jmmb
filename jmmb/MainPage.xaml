@@ -23,4 +23,13 @@
         </StackLayout>
     </ContentPage>
 
+
+    <ContentPage Title="Minutnik">
+        <StackLayout>
+            <Label Text="Ustaw czas (w minutach):" FontSize="Large"/>
+            <Label x:Name="remainingTimeLabel" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large"/>
+            <Button Text="Start" Clicked="startButton_Clicked" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage>
+
 </TabbedPage>
