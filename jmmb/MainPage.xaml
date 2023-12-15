@@ -2,20 +2,42 @@
 <TabbedPage
     x:Class="jmmb.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BarBackgroundColor="WhiteSmoke"
+    BarTextColor="DarkGray">
 
-    <ContentPage Title="Zegar">
+    <ContentPage Title="Zegar" BackgroundColor="DarkGray">
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Label x:Name="clockLabel" FontSize="40" />
+            <Label
+                x:Name="clockLabel"
+                FontSize="40"
+                TextColor="WhiteSmoke"
+                VerticalTextAlignment="Center" />
             <Label
                 x:Name="clockDateLabel"
-                Background="white"
-                FontSize="20" />
-          </StackLayout>
+                FontSize="20"
+                TextColor="WhiteSmoke" />
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Alarm" BackgroundColor="DarkGray">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <TimePicker
+                x:Name="TimePickerAlarm"
+                Format="HH:mm"
+                TextColor="WhiteSmoke" />
+            <Button
+                BackgroundColor="WhiteSmoke"
+                Clicked="SetAlarm_Clicked"
+                CornerRadius="45"
+                Text="Ustaw alarm"
+                TextColor="DarkGray"
+                WidthRequest="200" />
+        </StackLayout>
     </ContentPage>
 
 
-    <ContentPage Title="Minutnik">
+    <ContentPage Title="Minutnik" BackgroundColor="DarkGray">
         <StackLayout>
             <Label Text="Ustaw czas:" FontSize="Large"/>
             <Entry x:Name="entryTime" Placeholder="Ustaw czas (w minutach):" FontSize="Large"/>
