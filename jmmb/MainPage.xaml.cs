@@ -21,5 +21,10 @@ namespace jmmb
             });
 
         }
+
+        private void startButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
