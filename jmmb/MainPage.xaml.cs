@@ -14,5 +14,10 @@ namespace jmmb
         {
             InitializeComponent();
         }
+
+        private void startButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
