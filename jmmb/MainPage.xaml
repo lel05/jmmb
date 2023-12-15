@@ -2,12 +2,24 @@
 <TabbedPage
     x:Class="jmmb.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BarBackgroundColor="WhiteSmoke"
+    BarTextColor="DarkGray">
 
     <ContentPage Title="Zegar">
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Label x:Name="clockLabel" FontSize="40" VerticalTextAlignment="Center"/>
+            <Label
+                x:Name="clockLabel"
+                FontSize="40"
+                VerticalTextAlignment="Center" />
             <Label x:Name="clockDateLabel" FontSize="20" />
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Alarm">
+        <StackLayout>
+            <TimePicker x:Name="TimePickerAlarm" Format="HH:mm" />
+            <Button Clicked="SetAlarm_Clicked" Text="Ustaw alarm" />
         </StackLayout>
     </ContentPage>
 
