@@ -6,29 +6,49 @@
     BarBackgroundColor="WhiteSmoke"
     BarTextColor="DarkGray">
 
-    <ContentPage Title="Zegar">
+    <ContentPage Title="Zegar" BackgroundColor="DarkGray">
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
             <Label
                 x:Name="clockLabel"
                 FontSize="40"
+                TextColor="WhiteSmoke"
                 VerticalTextAlignment="Center" />
-            <Label x:Name="clockDateLabel" FontSize="20" />
+            <Label
+                x:Name="clockDateLabel"
+                FontSize="20"
+                TextColor="WhiteSmoke" />
         </StackLayout>
     </ContentPage>
 
-    <ContentPage Title="Alarm">
-        <StackLayout>
-            <TimePicker x:Name="TimePickerAlarm" Format="HH:mm" />
-            <Button Clicked="SetAlarm_Clicked" Text="Ustaw alarm" />
+    <ContentPage Title="Alarm" BackgroundColor="DarkGray">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <TimePicker
+                x:Name="TimePickerAlarm"
+                Format="HH:mm"
+                TextColor="WhiteSmoke" />
+            <Button
+                BackgroundColor="WhiteSmoke"
+                Clicked="SetAlarm_Clicked"
+                CornerRadius="45"
+                Text="Ustaw alarm"
+                TextColor="DarkGray"
+                WidthRequest="200" />
         </StackLayout>
     </ContentPage>
 
 
-    <ContentPage Title="Minutnik">
+    <ContentPage Title="Minutnik" BackgroundColor="DarkGray">
         <StackLayout>
-            <Label Text="Ustaw czas (w minutach):" FontSize="Large"/>
-            <Label x:Name="remainingTimeLabel" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large"/>
-            <Button Text="Start" Clicked="startButton_Clicked" FontSize="Large"/>
+            <Label FontSize="Large" Text="Ustaw czas (w minutach):" />
+            <Label
+                x:Name="remainingTimeLabel"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand" />
+            <Button
+                Clicked="startButton_Clicked"
+                FontSize="Large"
+                Text="Start" />
         </StackLayout>
     </ContentPage>
 
