@@ -39,8 +39,8 @@
 
     <ContentPage Title="Minutnik" BackgroundColor="DarkGray">
         <StackLayout>
-            <Label Text="Ustaw czas:" FontSize="Large"/>
-            <Entry x:Name="entryTime" Placeholder="Ustaw czas (w minutach):" FontSize="Large"/>
+            <Label Text="Ustaw czas:" FontSize="Large" TextColor="WhiteSmoke"/>
+            <Entry x:Name="entryTime" Placeholder="Ustaw czas (w minutach):" FontSize="Large" TextColor="WhiteSmoke" />
             <Label x:Name="remainingTimeLabel" Text="00:00" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="Large"/>
             <Button Text="Start" Clicked="startButton_Clicked" FontSize="Large"/>
         </StackLayout>
