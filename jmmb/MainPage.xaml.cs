@@ -8,11 +8,18 @@ using Xamarin.Forms;
 
 namespace jmmb
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : TabbedPage
     {
         public MainPage()
         {
             InitializeComponent();
+
+            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            {
+                clockLabel.Text = DateTime.Now.ToString();
+                return true;
+            });
+
         }
     }
 }
