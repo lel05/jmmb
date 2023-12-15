@@ -6,11 +6,8 @@
 
     <ContentPage Title="Zegar">
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-            <Label x:Name="clockLabel" FontSize="40" />
-            <Label
-                x:Name="clockDateLabel"
-                Background="white"
-                FontSize="20" />
+            <Label x:Name="clockLabel" FontSize="40" VerticalTextAlignment="Center"/>
+            <Label x:Name="clockDateLabel" FontSize="20" />
         </StackLayout>
     </ContentPage>
 
